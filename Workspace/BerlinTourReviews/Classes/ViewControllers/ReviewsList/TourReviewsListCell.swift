@@ -27,7 +27,7 @@ class TourReviewsListCell: UICollectionViewCell {
     
     static let messageLabelFont = UIFont.systemFont(ofSize: 14)
     static let headerLabelFont = UIFont.boldSystemFont(ofSize: 12)
-    static let minimalCellHeight : CGFloat = 40.0
+    static let minimalCellHeight : CGFloat = 60.0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
