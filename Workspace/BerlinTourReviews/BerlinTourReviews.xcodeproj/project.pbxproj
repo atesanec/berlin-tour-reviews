@@ -7,22 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E97AA9B52130795600B2261B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97AA9AA2130795600B2261B /* ViewController.swift */; };
+		09ED22C786F19D22FE08B3C5 /* Pods_BerlinTourReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1B37D574BCD156B9379B25 /* Pods_BerlinTourReviews.framework */; };
+		E97696F02131D4E700A0C5D8 /* TourReviewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97696EF2131D4E700A0C5D8 /* TourReviewEntity.swift */; };
+		E97696F22131D62200A0C5D8 /* NetworkRequestOffsetPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97696F12131D62200A0C5D8 /* NetworkRequestOffsetPager.swift */; };
+		E97696F52131E25F00A0C5D8 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97696F42131E25F00A0C5D8 /* String+Localizable.swift */; };
+		E97696F72131E28100A0C5D8 /* Dictionary+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97696F62131E28100A0C5D8 /* Dictionary+KeyPath.swift */; };
+		E97696FA2131ECD900A0C5D8 /* TourReviewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97696F92131ECD900A0C5D8 /* TourReviewsListViewController.swift */; };
+		E97696FC2131ED4400A0C5D8 /* TourReviewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97696FB2131ED4400A0C5D8 /* TourReviewsListViewModel.swift */; };
+		E97696FE2132186000A0C5D8 /* TourReviewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97696FD2132186000A0C5D8 /* TourReviewsListViewController.xib */; };
+		E976970121321C2B00A0C5D8 /* TourReviewsListSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976970021321C2B00A0C5D8 /* TourReviewsListSectionManager.swift */; };
+		E976970421321EA100A0C5D8 /* TourReviewsListDataSectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976970321321EA100A0C5D8 /* TourReviewsListDataSectionItem.swift */; };
+		E97697082132233300A0C5D8 /* TourReviewsListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97697072132233300A0C5D8 /* TourReviewsListLoader.swift */; };
+		E976970A2132363700A0C5D8 /* TourReviewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97697092132363700A0C5D8 /* TourReviewsListCell.swift */; };
 		E97AA9B62130795600B2261B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97AA9AB2130795600B2261B /* AppDelegate.swift */; };
 		E97AA9B72130795600B2261B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97AA9AD2130795600B2261B /* Assets.xcassets */; };
 		E97AA9B82130795600B2261B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97AA9AE2130795600B2261B /* LaunchScreen.storyboard */; };
-		E97AA9B92130795600B2261B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97AA9B02130795600B2261B /* Main.storyboard */; };
 		E97AA9BA2130795600B2261B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97AA9B22130795600B2261B /* Info.plist */; };
+		E97AA9C02130823700B2261B /* TourReviewNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97AA9BF2130823700B2261B /* TourReviewNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1B37D574BCD156B9379B25 /* Pods_BerlinTourReviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BerlinTourReviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C76541EFF52C8CB78629EE /* Pods-BerlinTourReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BerlinTourReviews.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-BerlinTourReviews/Pods-BerlinTourReviews.debug.xcconfig"; sourceTree = "<group>"; };
+		A2A097C7BB1A4AACD75BC05C /* Pods-BerlinTourReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BerlinTourReviews.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-BerlinTourReviews/Pods-BerlinTourReviews.release.xcconfig"; sourceTree = "<group>"; };
+		E97696EF2131D4E700A0C5D8 /* TourReviewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewEntity.swift; sourceTree = "<group>"; };
+		E97696F12131D62200A0C5D8 /* NetworkRequestOffsetPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestOffsetPager.swift; sourceTree = "<group>"; };
+		E97696F42131E25F00A0C5D8 /* String+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		E97696F62131E28100A0C5D8 /* Dictionary+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyPath.swift"; sourceTree = "<group>"; };
+		E97696F92131ECD900A0C5D8 /* TourReviewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewsListViewController.swift; sourceTree = "<group>"; };
+		E97696FB2131ED4400A0C5D8 /* TourReviewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewsListViewModel.swift; sourceTree = "<group>"; };
+		E97696FD2132186000A0C5D8 /* TourReviewsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourReviewsListViewController.xib; sourceTree = "<group>"; };
+		E976970021321C2B00A0C5D8 /* TourReviewsListSectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewsListSectionManager.swift; sourceTree = "<group>"; };
+		E976970321321EA100A0C5D8 /* TourReviewsListDataSectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewsListDataSectionItem.swift; sourceTree = "<group>"; };
+		E97697072132233300A0C5D8 /* TourReviewsListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewsListLoader.swift; sourceTree = "<group>"; };
+		E97697092132363700A0C5D8 /* TourReviewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewsListCell.swift; sourceTree = "<group>"; };
 		E97AA991213078D100B2261B /* BerlinTourReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BerlinTourReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E97AA9AA2130795600B2261B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E97AA9AB2130795600B2261B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E97AA9AD2130795600B2261B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E97AA9AF2130795600B2261B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E97AA9B12130795600B2261B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E97AA9B22130795600B2261B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97AA9BF2130823700B2261B /* TourReviewNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReviewNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,18 +54,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09ED22C786F19D22FE08B3C5 /* Pods_BerlinTourReviews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17D516EFF5D98FDE47C27CD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23C76541EFF52C8CB78629EE /* Pods-BerlinTourReviews.debug.xcconfig */,
+				A2A097C7BB1A4AACD75BC05C /* Pods-BerlinTourReviews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E97696F32131E25F00A0C5D8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E97696F42131E25F00A0C5D8 /* String+Localizable.swift */,
+				E97696F62131E28100A0C5D8 /* Dictionary+KeyPath.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E97696F82131ECC800A0C5D8 /* ReviewsList */ = {
+			isa = PBXGroup;
+			children = (
+				E97696FF21321C1D00A0C5D8 /* DataSource */,
+				E97696F92131ECD900A0C5D8 /* TourReviewsListViewController.swift */,
+				E97696FB2131ED4400A0C5D8 /* TourReviewsListViewModel.swift */,
+				E97697072132233300A0C5D8 /* TourReviewsListLoader.swift */,
+				E97697092132363700A0C5D8 /* TourReviewsListCell.swift */,
+				E97696FD2132186000A0C5D8 /* TourReviewsListViewController.xib */,
+			);
+			path = ReviewsList;
+			sourceTree = "<group>";
+		};
+		E97696FF21321C1D00A0C5D8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E976970021321C2B00A0C5D8 /* TourReviewsListSectionManager.swift */,
+				E976970321321EA100A0C5D8 /* TourReviewsListDataSectionItem.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		E97AA988213078D100B2261B = {
 			isa = PBXGroup;
 			children = (
 				E97AA9A92130795600B2261B /* Classes */,
 				E97AA9AC2130795600B2261B /* Resources */,
 				E97AA992213078D100B2261B /* Products */,
+				17D516EFF5D98FDE47C27CD4 /* Pods */,
+				ECE030954DA6BBD086C6599D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +123,10 @@
 		E97AA9A92130795600B2261B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E97AA9AA2130795600B2261B /* ViewController.swift */,
+				E97696F32131E25F00A0C5D8 /* Utils */,
+				E97AA9BD213081E500B2261B /* Data */,
+				E97AA9BE213081E500B2261B /* Network */,
+				E97AA9BC213081E500B2261B /* ViewControllers */,
 				E97AA9AB2130795600B2261B /* AppDelegate.swift */,
 			);
 			path = Classes;
@@ -67,10 +137,42 @@
 			children = (
 				E97AA9AD2130795600B2261B /* Assets.xcassets */,
 				E97AA9AE2130795600B2261B /* LaunchScreen.storyboard */,
-				E97AA9B02130795600B2261B /* Main.storyboard */,
 				E97AA9B22130795600B2261B /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E97AA9BC213081E500B2261B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E97696F82131ECC800A0C5D8 /* ReviewsList */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E97AA9BD213081E500B2261B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E97696EF2131D4E700A0C5D8 /* TourReviewEntity.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E97AA9BE213081E500B2261B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E97AA9BF2130823700B2261B /* TourReviewNetworkService.swift */,
+				E97696F12131D62200A0C5D8 /* NetworkRequestOffsetPager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ECE030954DA6BBD086C6599D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1B37D574BCD156B9379B25 /* Pods_BerlinTourReviews.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E97AA9A6213078D400B2261B /* Build configuration list for PBXNativeTarget "BerlinTourReviews" */;
 			buildPhases = (
+				DE103593D79B20F1AFFD66DC /* [CP] Check Pods Manifest.lock */,
 				E97AA98D213078D100B2261B /* Sources */,
 				E97AA98E213078D100B2261B /* Frameworks */,
 				E97AA98F213078D100B2261B /* Resources */,
+				4A0A88CF54F399A852CD006A /* [CP] Embed Pods Frameworks */,
+				38C98F686C2748652DAB4B29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,8 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97696FE2132186000A0C5D8 /* TourReviewsListViewController.xib in Resources */,
 				E97AA9BA2130795600B2261B /* Info.plist in Resources */,
-				E97AA9B92130795600B2261B /* Main.storyboard in Resources */,
 				E97AA9B72130795600B2261B /* Assets.xcassets in Resources */,
 				E97AA9B82130795600B2261B /* LaunchScreen.storyboard in Resources */,
 			);
@@ -140,13 +245,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38C98F686C2748652DAB4B29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-BerlinTourReviews/Pods-BerlinTourReviews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A0A88CF54F399A852CD006A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../../Pods/Target Support Files/Pods-BerlinTourReviews/Pods-BerlinTourReviews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-BerlinTourReviews/Pods-BerlinTourReviews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE103593D79B20F1AFFD66DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BerlinTourReviews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E97AA98D213078D100B2261B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97696FC2131ED4400A0C5D8 /* TourReviewsListViewModel.swift in Sources */,
+				E97696F02131D4E700A0C5D8 /* TourReviewEntity.swift in Sources */,
+				E976970421321EA100A0C5D8 /* TourReviewsListDataSectionItem.swift in Sources */,
+				E976970A2132363700A0C5D8 /* TourReviewsListCell.swift in Sources */,
+				E97696F52131E25F00A0C5D8 /* String+Localizable.swift in Sources */,
+				E976970121321C2B00A0C5D8 /* TourReviewsListSectionManager.swift in Sources */,
+				E97AA9C02130823700B2261B /* TourReviewNetworkService.swift in Sources */,
+				E97696FA2131ECD900A0C5D8 /* TourReviewsListViewController.swift in Sources */,
+				E97696F22131D62200A0C5D8 /* NetworkRequestOffsetPager.swift in Sources */,
+				E97696F72131E28100A0C5D8 /* Dictionary+KeyPath.swift in Sources */,
 				E97AA9B62130795600B2261B /* AppDelegate.swift in Sources */,
-				E97AA9B52130795600B2261B /* ViewController.swift in Sources */,
+				E97697082132233300A0C5D8 /* TourReviewsListLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,14 +336,6 @@
 				E97AA9AF2130795600B2261B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E97AA9B02130795600B2261B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E97AA9B12130795600B2261B /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,6 +457,7 @@
 		};
 		E97AA9A7213078D400B2261B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C76541EFF52C8CB78629EE /* Pods-BerlinTourReviews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +477,7 @@
 		};
 		E97AA9A8213078D400B2261B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A097C7BB1A4AACD75BC05C /* Pods-BerlinTourReviews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
