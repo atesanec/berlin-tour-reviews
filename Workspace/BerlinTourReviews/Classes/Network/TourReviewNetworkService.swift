@@ -19,6 +19,15 @@ class TourReviewNetworkService {
     enum SortType : String {
         case dateCreated = "date_of_review"
         case rating
+        
+        func displayName() -> String {
+            switch self {
+            case .dateCreated:
+                return "DateCreated".localized
+            case .rating:
+                return "Rating".localized
+            }
+        }
     }
     
     /**
@@ -27,6 +36,15 @@ class TourReviewNetworkService {
     enum SortDirection: String {
         case ascending = "ASC"
         case descending = "DESC"
+        
+        func displayName() -> String {
+            switch self {
+            case .ascending:
+                return "AscendingOrder".localized
+            case .descending:
+                return "DescendingOrder".localized
+            }
+        }
     }
     
     private enum Params: String {

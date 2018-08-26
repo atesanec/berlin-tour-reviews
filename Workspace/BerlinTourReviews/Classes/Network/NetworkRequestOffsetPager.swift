@@ -34,6 +34,7 @@ class NetworkRequestOffsetPager<T> {
     
     let loadedEntities = BehaviorSubject<[T]>(value: [T]())
     let allLoaded = BehaviorSubject<Bool>(value: false)
+    let isLoading = BehaviorSubject<Bool>(value: false)
     
     private let configuration: NetworkRequestOffsetPagerConfiguration<T>
     
@@ -47,6 +48,7 @@ class NetworkRequestOffsetPager<T> {
             let path = strongSelf.configuration.requestURL
             let params = strongSelf.loadNextRequestParams()
             
+            strongSelf.isLoading.onNext(true)
             let task = Alamofire.request(path, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil)
                 .responseJSON(queue: strongSelf.configuration.mappingQueue) { response in
                     switch(response.result) {
@@ -65,8 +67,9 @@ class NetworkRequestOffsetPager<T> {
                     case .failure(_):
                         observer.onError(response.result.error!)
                         break
-                        
                     }
+                    
+                    strongSelf.isLoading.onNext(false)
             }
             
             return Disposables.create {

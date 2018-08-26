@@ -24,16 +24,19 @@ class TourReviewsListLoader {
     }
     
     private func setupObservations() {
+        viewModel.loadNextBatchSignal.subscribe(onNext: { [weak self] _ in
+            let strongSelf = self!
+            let isLoading = try! strongSelf.pager!.isLoading.value()
+            if !isLoading {
+                strongSelf.pager!.loadNext().subscribe().disposed(by: strongSelf.requestDisposeBag)
+            }
+        }).disposed(by: viewModelDisposeBag)
+        
         Observable.combineLatest(viewModel.sortByPreset, viewModel.sortDirection, viewModel.ratingFilter)
             .subscribe(onNext: { [weak self] _ in
                 let strongSelf = self!
                 strongSelf.setupPager()
-                strongSelf.pager!.loadNext().subscribe().disposed(by: strongSelf.requestDisposeBag)
-        }).disposed(by: viewModelDisposeBag)
-        
-        viewModel.loadNextBatchSignal.subscribe(onNext: { [weak self] _ in
-            let strongSelf = self!
-            strongSelf.pager!.loadNext().subscribe().disposed(by: strongSelf.requestDisposeBag)
+                strongSelf.viewModel.loadNextBatchSignal.onNext(())
         }).disposed(by: viewModelDisposeBag)
     }
     
@@ -43,5 +46,7 @@ class TourReviewsListLoader {
                                                 ratingFilter: try! viewModel.ratingFilter.value(),
                                                 sortBy: try! viewModel.sortByPreset.value(),
                                                 sortDirection: try! viewModel.sortDirection.value())
+        
+        pager.loadedEntities.bind(to: viewModel.loadedReviews).disposed(by: viewModelDisposeBag)
     }
 }

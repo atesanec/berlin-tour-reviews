@@ -12,7 +12,7 @@ import Foundation
  *  Tour Review
  */
 class TourReviewEntity: Equatable {
-    static var dateFormatter : DateFormatter {
+    private static var dateFormatter : DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMMM d, yyyy"
         return dateFormatter

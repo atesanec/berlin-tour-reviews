@@ -11,21 +11,39 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class TourReviewsListSectionManager {
-    let viewModel: TourReviewsListViewModel
-    let disposeBag = DisposeBag()
-    weak var collectionView: UICollectionView!
+@objc class TourReviewsListSectionManager: NSObject, UICollectionViewDelegateFlowLayout {
+    private static let defaultCellIdentfier = "Cell"
+    
+    private let viewModel: TourReviewsListViewModel
+    private let disposeBag = DisposeBag()
+    private weak var collectionView: UICollectionView!
+    private var calculateSizeObservable: Observable<[Any]>!
     
     init(viewModel: TourReviewsListViewModel, collectionView: UICollectionView) {
         self.viewModel = viewModel
         self.collectionView = collectionView
+        super.init()
         self.configureManager()
     }
     
     private func configureManager() {
+        let defaultCellId = TourReviewsListSectionManager.defaultCellIdentfier
+        collectionView.register(TourReviewsListCell.self, forCellWithReuseIdentifier: defaultCellId)
+        
+        viewModel.loadedReviews.bind(to: collectionView.rx.items(cellIdentifier: defaultCellId, cellType: TourReviewsListCell.self)) { index, model, cell in
+            cell.configure(item: model)
+            }.disposed(by: disposeBag)
+        
+        collectionView.rx.setDelegate(self).disposed(by: disposeBag)
     }
     
-    private func configuredCell(indexPath: IndexPath, item: TourReviewEntity) -> UICollectionViewCell {
-        return UICollectionViewCell()
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let item: TourReviewEntity = try! collectionView.rx.model(at: indexPath)
+        let messageLabelHeight = ceil(item.reviewText.heightWithConstrainedWidth(width: collectionView.frame.width,
+                                                                            font: TourReviewsListCell.messageLabelFont))
+        
+        return CGSize(width: collectionView.frame.width, height: messageLabelHeight + TourReviewsListCell.minimalCellHeight)
     }
 }
